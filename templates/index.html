@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Protected site</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+        <link rel="stylesheet" href="../static/css/Login-screen.css">
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+
+    <body>
+
+        <h2 class="wrong_password">Wrong Password</h2>
+
+        <div id="login-one" class="login-one">
+            <form class="login-one-form" method="POST" onsubmit="return submitPassowrd('{{ redirect_url }}')">
+
+                <div class="col">
+                    <div class="login-one-ico"><i class="icon-lock"></i></div>
+                    <div class="form-group mb-3">
+                        <div>
+                            <h3 id="heading">Enter password</h3>
+                        </div>
+                        <label for="password" type="hidden"></label>
+                        <input class="form-control" type="password" id="password" placeholder="Password">
+                        <input type="submit" value="Go" class="btn btn-primary" id="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="../static/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

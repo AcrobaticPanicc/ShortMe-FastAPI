@@ -1,0 +1,13 @@
+requests
+starlette
+SQLAlchemy
+pytest
+pydantic
+uvicorn
+fastapi
+fastapi_cache
+fastapi_login
+fastapi_mail
+fastapi_sqlalchemy
+slowapi
+python-dotenv
